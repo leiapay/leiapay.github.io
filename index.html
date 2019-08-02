@@ -1,0 +1,62 @@
+<!DOCTYPE hmtl>
+<html>
+
+  <head>
+    <!-- info about the site -->
+<link rel = "stylesheet" href = "stylesheet.css">
+  </head>
+
+  <body>
+    <h1>  Leia  </h1>
+    <!--- content to go on the site -->
+
+    <div id = "sectionTwo">
+
+
+    <img src = "soccer.jpg" id="myImage" width= "25% "></img>
+    <input type = "button" onclick = "changeImage()" value ="Change"/>
+    <p style = "text-indent: 12px" id="lastParagraph">Im Leia and I am a senior at Kipp Academy Lynn collegiate. I'm interested in engineering and computer science. During my sophomore year of high school, I joined the soccer team and I also became a part of my school chica program which was able to provide a sisterhood and a support system that pushed minority women into pursuing different careers. </p>
+
+
+    <img src = "paris.jpg"width = "45%"></img>
+    <p onmouseover = "makeBlue(this)"onmouseout = "makeBlack(this)"  style = "text-indent:25px" class = "blackParagraph">Usually in hispanic culture to celebrate a fifteenth birthday girls have a big party that's supposed to introduce a girl into womanhood. Instead of celebrating my quince birthday with a big party I asked my father if we could travel to Paris.
+</p>
+<video width="320" height="240" controls>
+  <img scr = "nayaPool.jpg" id ="myVid" width "25%"></img>
+<source src="naya.mp4" type="video/mp4">
+
+
+</video>
+    </div>
+
+  </body>
+  <script>
+  function changeImage() {
+       var image = document.getElementById('myImage');
+       if (image.src.match("soccer.jpg")) {
+           image.src = "movies.jpg";
+       }
+       else {
+           image.src = "soccer.jpg";
+       }
+      // else {
+      //   image.src = "soccer.jpg";
+      // }
+    }
+    function changeItem (){
+      var vid = document.getElementById('myVid');
+      if(image.src.match(nayaPool.jpg)){
+        video.scr = "naya.mp4";
+      }
+      else{
+        image.src = "nayaPool.jpg";
+      }
+    }
+    function makeBlue(element){
+      element.style="color:blue"
+    }
+    function makeBlack(element){
+      element.style="color:black"
+    }
+    </script>
+</html>
